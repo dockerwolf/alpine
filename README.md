@@ -1,13 +1,12 @@
-# Alpine
+# OpenJDK OpenJ9
 
-[![](https://images.microbadger.com/badges/image/webhippie/alpine.svg)](https://microbadger.com/images/webhippie/alpine "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/cwlf/openjdk-openj9.svg)](https://microbadger.com/images/cwlf/openjdk-openj9)
 
-This is our minimal customized [Alpine Linux](http://alpinelinux.org) base image based on [official Alpine](https://registry.hub.docker.com/_/alpine/). Optionally you can enable a cron daemon, to get it running you need to provide the environment variable `CRON_ENABLED=true` or `CRON_ENABLED=1`. You can see the available variables below. Be aware that you have to start `s6` to get the cron daemon started automatically.
-
+This is our minimal customized OpenJDK base image based on [AdoptOpenJDK's OpenJ9 build](https://registry.hub.docker.com/adoptopenjdk/openjdk8-openj9/). Optionally you can enable a cron daemon, to get it running you need to provide the environment variable `CRON_ENABLED=true` or `CRON_ENABLED=1`. You can see the available variables below. Be aware that you have to start `s6` to get the cron daemon started automatically.
 
 ## Versions
 
-To get an overview about the available versions please take a look at the [GitHub branches](https://github.com/dockhippie/alpine/branches/all) or our [Docker Hub tags](https://hub.docker.com/r/webhippie/alpine/tags/), these lists are always up to date.
+To get an overview about the available versions please take a look at the [GitHub branches](https://github.com/dockerwolf/openjdk-openj9/branches/all) or our [Docker Hub tags](https://hub.docker.com/r/cwlf/openjdk-openj9/tags/), these lists are always up to date.
 
 
 ## Volumes
@@ -40,7 +39,7 @@ Fork -> Patch -> Push -> Pull Request
 ## Authors
 
 * [Thomas Boerger](https://github.com/tboerger)
-
+* [Chip Wolf](https://github.com/chipwolf)
 
 ## License
 
@@ -51,4 +50,5 @@ MIT
 
 ```
 Copyright (c) 2015 Thomas Boerger <http://www.webhippie.de>
+Copyright (c) 2019 Chip Wolf <https://chipwolf.uk>
 ```

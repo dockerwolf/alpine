@@ -1,5 +1,5 @@
-FROM alpine:edge
-MAINTAINER Thomas Boerger <thomas@webhippie.de>
+FROM adoptopenjdk/openjdk8-openj9:alpine
+MAINTAINER Chip Wolf <hello@chipwolf.uk>
 
 ADD rootfs /
 
@@ -31,7 +31,7 @@ ARG VCS_REF
 LABEL org.label-schema.version=$VERSION
 LABEL org.label-schema.build-date=$BUILD_DATE
 LABEL org.label-schema.vcs-ref=$VCS_REF
-LABEL org.label-schema.vcs-url="https://github.com/dockhippie/alpine.git"
-LABEL org.label-schema.name="Alpine"
-LABEL org.label-schema.vendor="Thomas Boerger"
+LABEL org.label-schema.vcs-url="https://github.com/dockerwolf/openjdk8-openj9.git"
+LABEL org.label-schema.name="OpenJDK OpenJ9"
+LABEL org.label-schema.vendor="Chip Wolf"
 LABEL org.label-schema.schema-version="1.0"
